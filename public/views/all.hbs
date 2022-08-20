@@ -1,0 +1,13 @@
+{{>header}}
+{{>navbar}}
+
+        {{#each articles}}
+        <div class="viewarticle" >
+        <h1 class="p-2">{{this.title}}</h1>
+        <h5 class="ps-3">{{this.content}}</h5>
+        <a href="/single/{{this._id}}" class="btn btn-primary mx-2 mb-3">Show article</a>
+        <a href="/del/{{this._id}}" class="btn btn-danger mx-2 mb-3">Delete article</a>
+        </div>
+        <br>
+        {{/each}}
+{{>footer}}

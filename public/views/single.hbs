@@ -1,0 +1,13 @@
+{{>header}}
+{{>navbar}}
+{{#unless article}}
+
+<div class="alert alert-danger">
+    user not found
+</div>
+
+{{else}}
+<h1>{{article.title}}</h1>
+<p>{{article.content}}</p>
+{{/unless}}
+{{>footer}}
